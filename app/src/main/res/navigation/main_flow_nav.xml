@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_flow_nav"
+    app:startDestination="@id/logInFragment2">
+
+    <fragment
+        android:id="@+id/connectionStatusFragment"
+        android:name="com.stonecoders.stockinteligenterfid.fragments.ConnectionStatusFragment"
+        android:label="fragment_connection_status"
+        tools:layout="@layout/fragment_connection_status" />
+    <fragment
+        android:id="@+id/readElements"
+        android:name="com.stonecoders.stockinteligenterfid.fragments.FragmentReadElements"
+        android:label="fragment_read_elements"
+        tools:layout="@layout/fragment_read_elements" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.stonecoders.stockinteligenterfid.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_readElements"
+            app:destination="@id/readElements" />
+        <action
+            android:id="@+id/action_homeFragment_to_regularConnectionsFragment"
+            app:destination="@id/regularConnectionsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_inventoryFragment"
+            app:destination="@id/inventoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/regularConnectionsFragment"
+        android:name="com.stonecoders.stockinteligenterfid.fragments.RegularConnectionsFragment"
+        android:label="fragment_regular_connections"
+        tools:layout="@layout/fragment_regular_connections">
+        <action
+            android:id="@+id/action_regularConnectionsFragment_to_connectionStatusFragment"
+            app:destination="@id/connectionStatusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.stonecoders.stockinteligenterfid.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/logInFragment2"
+        android:name="com.stonecoders.stockinteligenterfid.fragments.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in">
+        <action
+            android:id="@+id/action_logInFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.stonecoders.stockinteligenterfid.fragments.InventoryFragment"
+        android:label="fragment_inventory"
+        tools:layout="@layout/fragment_inventory" />
+</navigation>

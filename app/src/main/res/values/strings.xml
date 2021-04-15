@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">StockInteligenteRFID</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Buscar</string>
+    <string name="connect">Conectar</string>
+    <string name="bt_unsupported">Este dispositivo no soporta la tecnología Bluetooth.</string>
+    <string name="new_readers_prompt">Conectate a un nuevo dispositivo</string>
+    <string name="cancel">Cancelar</string>
+    <string name="connecting">Conectando</string>
+    <string name="connected">Conectado</string>
+    <string name="password">Contraseña</string>
+    <string name="username">Nombre de Usuario</string>
+    <string name="company">Empresa</string>
+    <string name="log_in">Iniciar Sesión</string>
+    <string name="clear">Borrar</string>
+    <string name="stop">Detener</string>
+    <string name="scan_unique"> ÚNICA</string>
+    <string name="scan_multiple"> MÚLTIPLES</string>
+    <string name="scan_prompt">Escanear Etiquetas</string>
+    <string name="previous_connections">Conexiones Previas</string>
+    <string name="add_device">Agregar Dispositivo</string>
+    <string name="reader_settings">Configurar Lector</string>
+    <string name="settings">Configuración</string>
+    <string name="read_inventory">Leer Inventario</string>
+    <string name="search_tag">Buscar Etiqueta</string>
+    <string name="start_search">Iniciar Búsqueda</string>
+    <string name="test_reader">Probar Lector</string>
+</resources>
